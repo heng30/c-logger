@@ -16,7 +16,7 @@ int main(void) {
 
     logger_set_filepath(filepath);
     logger_set_size(1024 * 1024);
-    logger_set_level(LOGGER_LV_WARN | LOGGER_LV_DEBUG);
+    logger_set_level(LOGGER_LV_ALL);
 
     _TRACE_LOG("%s %s", str, str2);
     _DEBUG_LOG("%s %s", str, str2);
@@ -25,4 +25,16 @@ int main(void) {
     _ERROR_LOG("%s %s", str, str2);
     _FATAL_LOG("%s %s", str, str2);
 }
+```
+
+
+``` text
+[D] [Apr 16 16:58:42] [m.c] [main:13]: hello world
+[W] [Apr 16 16:58:42] [m.c] [main:15]: hello world
+[T] [Apr 16 16:59:34] [m.c] [main:12]: hello world
+[D] [Apr 16 16:59:34] [m.c] [main:13]: hello world
+[I] [Apr 16 16:59:34] [m.c] [main:14]: hello world
+[W] [Apr 16 16:59:34] [m.c] [main:15]: hello world
+[E] [Apr 16 16:59:34] [m.c] [main:16]: hello world
+[F] [Apr 16 16:59:34] [m.c] [main:17]: hello world
 ```
