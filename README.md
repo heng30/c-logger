@@ -24,4 +24,5 @@ int main(void) {
     _WARN_LOG("%s %s", str, str2);
     _ERROR_LOG("%s %s", str, str2);
     _FATAL_LOG("%s %s", str, str2);
+}
 ```
