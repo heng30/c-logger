@@ -3,11 +3,9 @@
 #include <time.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include <stdint.h>
 #include <pthread.h>
 #include <limits.h>
 #include <errno.h>
-#include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 

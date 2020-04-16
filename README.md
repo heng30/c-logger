@@ -12,6 +12,7 @@
 int main(void) {
     const char *str = "hello";
     const char *str2 = "world";
+    const char *filepath = "/tmp/logger.log";
 
     logger_set_filepath(filepath);
     logger_set_size(1024 * 1024);
@@ -23,5 +24,4 @@ int main(void) {
     _WARN_LOG("%s %s", str, str2);
     _ERROR_LOG("%s %s", str, str2);
     _FATAL_LOG("%s %s", str, str2);
-
 ```

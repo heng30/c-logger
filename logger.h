@@ -8,6 +8,8 @@
 #ifndef _LOGGER_H_
 #define _LOGGER_H_
 
+#include <stdlib.h>
+
 #define LOGGER_LV_NONE 0
 #define LOGGER_LV_TRACE 1
 #define LOGGER_LV_DEBUG 2
@@ -17,6 +19,20 @@
 #define LOGGER_LV_FATAL 32
 #define LOGGER_LV_ALL 63
 
+/* @func:
+ *  设置日志输出文件
+ */
+void logger_set_filepath(const char *filepath);
+
+/* @func:
+ *  设置日志级别
+ */
+void logger_set_level(unsigned char level);
+
+/* @func:
+ *  设置日志文件大小
+ */
+void logger_set_size(size_t size);
 
 /* @func:
  *	打印调试日志信息
