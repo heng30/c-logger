@@ -1,6 +1,6 @@
 # C 语言实现的同步阻塞日志库：
 ## 功能：
-- 调试日志框架，支持stdout输出和输出到日志文件中;
+- 支持输出到标准输出和文件中
 - 支持设置日志级别
 - 支持日志文件重写
 - 线程安全
@@ -29,8 +29,6 @@ int main(void) {
 
 
 ``` text
-[D] [Apr 16 16:58:42] [m.c] [main:13]: hello world
-[W] [Apr 16 16:58:42] [m.c] [main:15]: hello world
 [T] [Apr 16 16:59:34] [m.c] [main:12]: hello world
 [D] [Apr 16 16:59:34] [m.c] [main:13]: hello world
 [I] [Apr 16 16:59:34] [m.c] [main:14]: hello world
